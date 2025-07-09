@@ -1,0 +1,22 @@
+{
+  "name": "@freemial/cli",
+  "version": "1.0.0",
+  "license": "MIT",
+  "packageManager": "yarn@4.9.2",
+  "bin": "./dist/index.mjs",
+  "scripts": {
+    "cli": "tsx src",
+    "test": "tsx --test",
+    "build": "pkgroll"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.8",
+    "pkgroll": "^2.14.1",
+    "tsx": "^4.20.3"
+  },
+  "dependencies": {
+    "@commander-js/extra-typings": "^14.0.0",
+    "@freemial/connect": "workspace:^",
+    "commander": "^14.0.0"
+  }
+}

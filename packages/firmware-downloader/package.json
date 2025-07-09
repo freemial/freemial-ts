@@ -1,0 +1,23 @@
+{
+  "name": "@freemial/firmware-downloader",
+  "version": "1.0.0",
+  "license": "MIT",
+  "packageManager": "yarn@4.9.2",
+  "bin": "./dist/index.mjs",
+  "scripts": {
+    "test": "tsx --test",
+    "run": "tsx src",
+    "build": "pkgroll"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.8",
+    "@types/ws": "^8.18.1",
+    "pkgroll": "^2.14.1",
+    "tsx": "^4.20.3"
+  },
+  "dependencies": {
+    "@commander-js/extra-typings": "^14.0.0",
+    "commander": "^14.0.0",
+    "ws": "^8.18.3"
+  }
+}

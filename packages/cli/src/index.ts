@@ -1,6 +1,6 @@
 import { Command } from '@commander-js/extra-typings';
 import { run } from './run';
-import { WiFiSecurityType } from '../connection';
+import { WiFiSecurityType } from '@freemial/connection';
 
 const program = new Command()
     .requiredOption('--ssid <string>', 'The SSID of your WiFi network')

@@ -1,6 +1,4 @@
-import { DeviceConnection, GetSerialNumberMessage } from "../connection";
-import { SerialNumberMessage, SSIDListMessage, IDontUnderstand, CheckWifiConnection } from '../connection';
-import { GetSSIDListMessage, LoadSSIDMessage } from '../connection';
+import { DeviceConnection, GetSerialNumberMessage, SerialNumberMessage, SSIDListMessage, IDontUnderstand, CheckWifiConnection, GetSSIDListMessage, LoadSSIDMessage  } from "@freemial/connection";
 
 export const run = async ({ qrValue, ssid, key, baseHost, force, securityType }: { qrValue: string, ssid: string, key: string, baseHost: string, force?: boolean, securityType?: number }) => {
   const connection = new DeviceConnection({ qrValue });
