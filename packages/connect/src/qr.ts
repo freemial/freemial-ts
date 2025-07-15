@@ -10,7 +10,7 @@ export const parseQRValue = (qrValue: string): ParsedQR => {
   if (!qrValue || typeof qrValue !== 'string') {
     throw new Error('Invalid QR value');
   }
-  const [identifier, serialNumber, wifiStatus, countryCode, pairingCode] =qrValue.split(':')
+  const [identifier, serialNumber, wifiStatus, countryCode, pairingCode] = qrValue.split(':')
   if (!identifier || !serialNumber || !wifiStatus || !countryCode || !pairingCode) {
     throw new Error('QR value is not in the expected format');
   }

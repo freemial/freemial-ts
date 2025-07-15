@@ -1,4 +1,4 @@
-const getShort = (a,b) => a << 8 | b << 0
+const getShort = (a: number, b: number) => a << 8 | b << 0
 
 export class SerialNumberMessage {
     serialNumber: string; 
@@ -43,7 +43,7 @@ export class CheckWifiConnection {
 export class InboundMessage {
     public static fromBuffer(decrypted: Buffer): SerialNumberMessage | SSIDListMessage | IDontUnderstand | CheckWifiConnection {
         const from = decrypted[2];
-        const copyofrange2 = decrypted.subarray(3, 5);
+        const copyofrange2 = decrypted.subarray(3, 4);
         const bytesToShort = getShort(copyofrange2[1], copyofrange2[0])
         if (bytesToShort > 0) {
             const payload = decrypted.subarray(5, 5 + bytesToShort);
