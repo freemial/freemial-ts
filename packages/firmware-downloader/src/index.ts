@@ -20,7 +20,7 @@ How to use:
 
 program.name('Firmware Downloader')
   .description(description)
-  .version('0.0.1');
+  .showHelpAfterError(true);
 
 program.parseAsync(process.argv);
 

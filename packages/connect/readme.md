@@ -3,12 +3,23 @@ This module enables you to communicate with a Temial tea machine, once you're co
 
 For more information on how (and why) it works, please read the [Technical Docs](/packages/connect/technical-docs.md).
 
+## Installation
+```bash
+yarn add @freemial/connect
+```
+or
+```bash
+npm i @freemial/connect
+```
+
 ## Example Usage
 ```ts
 import { setTimeout } from 'node:timers/promises';
-import { DeviceConnection } from "./device-connection";
-import { SerialNumberMessage, SSIDListMessage, IDontUnderstand, CheckWifiConnection } from './inbound-message';
-import { GetSerialNumberMessage, GetSSIDListMessage, LoadSSIDMessage, WiFiSecurityType } from './outbound-message';
+import {
+    DeviceConnection,
+    SerialNumberMessage, SSIDListMessage, IDontUnderstand, CheckWifiConnection,
+    GetSerialNumberMessage, GetSSIDListMessage, LoadSSIDMessage, WiFiSecurityType
+} from "@freemial/connect";
 
 export const go = async (qrValue: string) => {
   const connection = new DeviceConnection({ qrValue });

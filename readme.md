@@ -12,4 +12,9 @@ And some developer tools:
 
 ## How does this work?
 The process of connecting the Temial to a WiFi network also configures which websocket server it should connect to to send and receive messages.
+
 This means that once you've hosted the [Example Websocket Server](./packages/freemial-server/readme.md) somewhere you just need to follow the [CLI](./packages/cli/readme.md)'s instructions to configure the device to use that websocket server, and you're away!
+
+## What next?
+
+
