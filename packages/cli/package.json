@@ -1,6 +1,6 @@
 {
   "name": "@freemial/cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "AGPL-3.0-or-later",
   "packageManager": "yarn@4.9.2",
   "bin": "./dist/index.mjs",

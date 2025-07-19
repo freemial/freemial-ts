@@ -1,6 +1,6 @@
 {
   "name": "@freemial/connect",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "AGPL-3.0-or-later",
   "type": "module",
   "packageManager": "yarn@4.9.2",
