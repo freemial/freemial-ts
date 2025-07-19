@@ -1,6 +1,6 @@
 {
   "name": "@freemial/connect",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "type": "module",
   "packageManager": "yarn@4.9.2",
@@ -10,7 +10,8 @@
   },
   "scripts": {
     "test": "tsx --test",
-    "build": "pkgroll"
+    "build": "pkgroll",
+    "prepublish": "yarn build"
   },
   "devDependencies": {
     "@types/node": "^24.0.8",
