@@ -15,6 +15,5 @@ The process of connecting the Temial to a WiFi network also configures which web
 
 This means that once you've hosted the [Example Websocket Server](./packages/freemial-server/readme.md) somewhere you just need to follow the [CLI](./packages/cli/readme.md)'s instructions to configure the device to use that websocket server, and you're away!
 
-## What next?
-
-
+## How do __they__ work?
+For more in-depth technical documentation head over the [Technical Docs](./packages/connect/technical-docs.md) for the temial connection library.
