@@ -45,19 +45,19 @@ export type DeviceStatusContent = {
 
 export type BrewStatusContent = {
   temperature: number;
-    multibrew: number;
-    currentTimePrewash: number;
-    currentTimeHeating: number;
-    currentTimeBrewing: number;
-    pumpedVolume: number;
-    estimatedRemainingVolumeFreshWater: number;
-    teaId: number;
-    userId: number;
-    estimatedTimePrewash: number;
-    estimatedTimeHeating: number;
-    estimatedTimeBrewing: number;
-    remainingTotalTime: number;
-    phase: number;
+  multibrew: number;
+  currentTimePrewash: number;
+  currentTimeHeating: number;
+  currentTimeBrewing: number;
+  pumpedVolume: number;
+  estimatedRemainingVolumeFreshWater: number;
+  teaId: number;
+  userId: number;
+  estimatedTimePrewash: number;
+  estimatedTimeHeating: number;
+  estimatedTimeBrewing: number;
+  remainingTotalTime: number;
+  phase: number;
 }
 
 export class DisconnectedMessage {constructor(public serialNumber: string){}}
@@ -75,3 +75,4 @@ export class BrewStatusMessage {
 export class NewConnectionMessage {
   constructor(public serialNumber: string){}
 }
+

@@ -1,9 +1,13 @@
 {
   "name": "@freemial/connect",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "type": "module",
   "packageManager": "yarn@4.9.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freemial/freemial-ts.git"
+  },
   "scripts": {
     "test": "tsx --test",
     "build": "pkgroll"
