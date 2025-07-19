@@ -2,7 +2,7 @@
   "name": "@freemial/server",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "license": "AGPL-3.0-or-later",
   "packageManager": "yarn@4.9.2",
   "bin": "./dist/index.mjs",
   "scripts": {
